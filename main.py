@@ -36,7 +36,8 @@ def main(cfg=cfg, logger=logger):
     base_cache_folder = pathlib.Path(f"{base_dir}/cache")
 
     # clear the cache folder
-    rm_tree(base_cache_folder)
+    if base_cache_folder.exists():
+        rm_tree(base_cache_folder)
 
     # setup the HTTP header for the API request
     h = {
