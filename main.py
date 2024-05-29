@@ -38,7 +38,7 @@ def main(cfg=cfg, logger=logger):
     # clear the cache folder
     rm_tree(base_cache_folder)
 
-    # setup variables for API request
+    # setup the HTTP header for the API request
     h = {
         "Auth-API-Id": cfg["api_key"],
     }
