@@ -1,0 +1,7 @@
+---
+api_key: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+pgsize: 500
+expired: 0
+status: active
+scamtype: pet
+fields: Id,ScamType,SiteName,PublicComments,Project
